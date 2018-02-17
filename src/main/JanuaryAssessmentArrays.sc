@@ -2,16 +2,16 @@ import scala.collection.mutable.ArrayBuffer
 import scala.util.Random
 
 object JanuaryAssessmentArrays extends App{
-  def main(args: Array[String]): sdcv = {
+  def main(args: Array[String]): Unit = {
+    println("January Assessment")
+  }
 
   }
 
   //Question1
   def randomInt(i: Int) = {
-
-      Array.fill(i) {
-        Random.nextInt(i)
-
+    Array.fill(i) {
+      Random.nextInt(i)
     }
   }
 
@@ -27,16 +27,42 @@ object JanuaryAssessmentArrays extends App{
 
   //Question3
 
-  val c = ArrayBuffer(1,2,3,4,5)
-  val c2 = for(i <- 0 until c.length) yeild {
+  val c = ArrayBuffer[Int](1,2,3,4,5)
+  val c2 = for(i <- 0 until c.length) yeld {
     if(i%2==0 % && i<c.length-1) c(i+1)
     else if(i%2!=0 && i!=0) c(i-1)
     else c(i)
   }
 
   //Question4
-  val arrayA = new ArrayBuffer[Int]()
+  val arrayA = ArrayBuffer[Int]()
   for(i <- 0 until arrayA.length) {
     val newItemPos = for (elem <- arrayA if elem > 0) yield elem
     val newItemNeg = for (elem <- arrayA if elem <= 0) yield elem
   }
+
+  //Question5
+  val array5 = Array[Double](arraySize)
+  array5.sum/arraySize
+
+  //Question 6
+  val array6 = Array[Int](size)
+  val array6Sorted = (_>_)
+
+  //Question7
+  val array7 = Array[type](size)
+  array7.distinct
+
+  //Question 8
+  val array8 = ArrayBuffer[Int]()
+  for(i <- 0 until arrayA.length) {
+  val newItemPos = for (elem <- array8 if elem > 0) yield elem
+  val newItemNeg = for (elem <- array8 if elem <= 0) yield elem
+}
+
+  //Question9
+
+  //Question10
+
+
+
