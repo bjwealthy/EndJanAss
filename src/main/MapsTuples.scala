@@ -9,11 +9,34 @@ object MapsTuples extends App {
   val priceDiscounted = for((g, pD) <- favourites) yield (g, pD*(9/10))
 
   //Question2
-  val words = new java.util.Scanner(new java.io.File("theFile"))
-  while (words.hasNext())
-    process words.next()
+  def wordCounter(theFile: String) Unit =
+  {
+    val readWords = new java.util.Scanner(new java.io.File("theFile"))
+    val words = readWords.nextInt()
+    while (readWords.hasNext())
+      process readWords
+    .next()
+    val newMap = collection.mutable.Map[String, Int]()
+    if (readWords.contains(words)
+      readWords (word) = 1)
+  }
+  for (key, value) <- readWords)
+      println(key + " " value)
 
   //Question3
+  def wordCounter(theFile: String): Unit = {
+    val readWords = new java.util.Scanner(new java.io.File(thisFile))
+    val newMap = Map[String, Int]()
+    while(readWords.hasNext()){
+      val words = readWords.next()
+      newMap += (word -> (container.getOrElse(word, 0) +1))
+    }
+    println(newMap)
+
+  }
+
+  //Question4
+
 
 
 }

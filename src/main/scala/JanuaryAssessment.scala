@@ -47,11 +47,10 @@ we use the toInt function
   def power(x: Int, n: Int): Long = {
     if(n>=1) x*power(x, n-1)
     else 1
-  }
+  }*/
 
   //Question 11
   
 
 
 
-}
