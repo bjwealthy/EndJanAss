@@ -36,6 +36,16 @@ object MapsTuples extends App {
   }
 
   //Question4
+  def wordCounter(theFile: String) : Unit = {
+    val readWords = new java.util.Scanner(new java.io.File(theFile))
+    var newMap = collection.mutable.SortedMao[String, Int]()
+    while(readWords.hasNext()){
+      val words = readWords.next()
+      readWords += (words -> (readWords.getOrElse(words, 0) + 1))
+    }
+    println(readWords)
+
+  }
 
 
 
