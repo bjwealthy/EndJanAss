@@ -2,9 +2,6 @@ import scala.collection.mutable.ArrayBuffer
 import scala.util.Random
 
 object JanuaryAssessmentArrays extends App{
-  def main(args: Array[String]): Unit = {
-    println("January Assessment")
-  }
 
   }
 

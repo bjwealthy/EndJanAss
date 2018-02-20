@@ -9,8 +9,6 @@ println(theString.charAt(0))
 //Control Structure and Functions
 //Quetion 1
 object JanuaryAssessment extends App {
-  def main(args: Array[String]): Unit = {
-  }
   println("Welcome !")
 
   def sinumCalculator(input: int): Int = {
